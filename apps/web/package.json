@@ -1,15 +1,16 @@
 {
-  "name": "@darpo/web",
+  "name": "web",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next node_modules"
   },
   "dependencies": {
-    "@darpo/shared": "*",
+    "shared": "*",
     "@supabase/auth-helpers-nextjs": "^0.8.7",
     "@supabase/supabase-js": "^2.39.1",
     "next": "14.0.4",
