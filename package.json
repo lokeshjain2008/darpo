@@ -1,1 +1,17 @@
-{\n  \"name\": \"darpo\",\n  \"version\": \"0.0.1\",\n  \"private\": true,\n  \"workspaces\": [\"apps/*\", \"packages/*\"],\n  \"scripts\": {\n    \"dev\": \"turbo run dev\",\n    \"build\": \"turbo run build\",\n    \"lint\": \"turbo run lint\",\n    \"format\": \"prettier --write \\\"**/*.{ts,tsx,md}\\\"\"\n  },\n  \"devDependencies\": {\n    \"prettier\": \"^3.1.1\",\n    \"turbo\": \"^1.11.3\"\n  },\n  \"packageManager\": \"npm@10.2.3\"\n}
+{
+  "name": "darpo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "turbo": "^1.11.3"
+  },
+  "packageManager": "npm@10.2.3"
+}
