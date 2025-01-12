@@ -25,7 +25,15 @@ A modern hotel management system built with Next.js, Supabase, and Expo using a 
 1. Install dependencies:
 ```bash
 # Install root dependencies
+# Install all dependencies
 npm install
+
+# Install a package in a specific workspace
+npm install axios -w @your-org/web    # for web app
+npm install react-native -w @your-org/mobile  # for mobile app
+
+# Install in root (for shared tooling)
+npm install -D typescript --workspace=false
 ```
 
 2. Environment Setup:
@@ -42,12 +50,15 @@ EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 3. Run development servers:
 ```bash
-# Run all apps
+# Run all apps in dev mode
 npm run dev
 
 # Run specific app
-npm run dev --filter=web  # For Next.js
-npm run dev --filter=mobile  # For Expo
+npm run dev --workspace=apps/web
+npm run dev --workspace=apps/mobile
+
+# Run multiple specific apps
+npm run dev --workspaces --if-present
 ```
 
 ## Deployment
