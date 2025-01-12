@@ -6,13 +6,15 @@
   "types": "./src/index.ts",
   "scripts": {
     "lint": "eslint",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "types:generate": "supabase gen types typescript --local > src/types/supabase.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "supabase": "^1.115.5"
   }
 }
