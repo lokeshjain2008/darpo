@@ -3,6 +3,6 @@
     "supabase:types": "supabase gen types typescript --project-id your-project-id > packages/shared/src/types/supabase.ts"
   },
   "devDependencies": {
-    "supabase": "^2.39.0"
+    "supabase": "~2.6.8"
   }
 }
