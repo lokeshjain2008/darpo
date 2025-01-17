@@ -59,6 +59,19 @@ npm run dev --workspace=apps/mobile
 
 # Run multiple specific apps
 npm run dev --workspaces --if-present
+
+## Command Context:
+--workspace is used with npm commands (install, run, etc.)
+--filter (scope) is used with turbo commands
+
+# npm workspace syntax
+npm run dev --workspace=apps/web
+npm install react --workspace=apps/web
+
+# turbo scope syntax
+turbo run dev --filter=web
+turbo run build --filter=web
+
 ```
 
 ## Deployment
