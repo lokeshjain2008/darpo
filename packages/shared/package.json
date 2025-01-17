@@ -1,20 +1,10 @@
 {
-  "name": "shared",
+  "name": "@darpo/shared",
   "version": "0.0.1",
-  "private": true,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
-  "scripts": {
-    "lint": "eslint",
-    "clean": "rm -rf .turbo && rm -rf node_modules",
-    "types:generate": "supabase gen types typescript --local > src/types/supabase.ts"
-  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.6",
-    "typescript": "^5.3.3",
-    "supabase": "^1.115.5"
+    "@supabase/supabase-js": "^2.39.0"
   }
 }
