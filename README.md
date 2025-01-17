@@ -12,7 +12,7 @@ Hotel management system using React (Vite), Supabase, and Expo
 ### Environment Setup
 1. Install dependencies:
 ```bash
-pnpm install
+npm install
 ```
 
 2. Configure Supabase:
@@ -20,7 +20,7 @@ pnpm install
 - Copy your project ID from the project settings
 - Generate types:
 ```bash
-pnpm supabase:types
+npm supabase:types
 ```
 
 3. Set up environment variables:
